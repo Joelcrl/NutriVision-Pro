@@ -1,9 +1,16 @@
 import streamlit as st
-import tensorflow as tf
 import json
 import os
 import hashlib
 from child_nutrition import childNutrition_Requirements, get_nutrition_needs 
+
+# Try to import tensorflow, but make it optional
+try:
+    import tensorflow as tf
+    TF_AVAILABLE = True
+except ImportError:
+    tf = None
+    TF_AVAILABLE = False
 
 MODEL_PATH = "model/fruit_classifier.h5"
 CLASS_NAMES_PATH = "model/class_names.json"
@@ -13,6 +20,13 @@ LOGO_PATH = "assets/logo.png"
 @st.cache_resource
 def load_resources():
     model = None
+    class_names = []
+    
+    # Only try to load model if TensorFlow is available
+    if not TF_AVAILABLE:
+        st.sidebar.warning("⚠️ TensorFlow not available - fruit classification disabled")
+        return None, []
+    
     if os.path.exists(MODEL_PATH):
         try:
             model = tf.keras.models.load_model(MODEL_PATH)
@@ -21,7 +35,6 @@ def load_resources():
     else:
         st.sidebar.warning(f"Warning: Model file not found at {MODEL_PATH}. Classification will be skipped.")
 
-    class_names = []
     if os.path.exists(CLASS_NAMES_PATH):
         try:
             with open(CLASS_NAMES_PATH, "r") as f:
@@ -40,7 +53,6 @@ if 'logged_in' not in st.session_state:
 if 'current_page' not in st.session_state:
     st.session_state['current_page'] = 'login'
 if 'user_data' not in st.session_state:
-    
     st.session_state['user_data'] = {
         "demo@example.com": {"password_hash": "e99a18c428cb38d5f260853678922e03", "children": []}
     }
