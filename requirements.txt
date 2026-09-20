@@ -1,11 +1,6 @@
-torch
-torchvision
-tornado
-werkzeug
-streamlit
-pandas
-numpy
-scikit-learn
-xgboost
-optuna
-tensorflow-cpu
+streamlit==1.28.1
+tensorflow==2.13.0
+pandas==2.0.3
+numpy==1.24.3
+scikit-learn==1.3.0
+Pillow==10.0.0
