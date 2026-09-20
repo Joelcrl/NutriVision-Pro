@@ -8,4 +8,4 @@ numpy
 scikit-learn
 xgboost
 optuna
-# (Tambahkan library lain yang kamu gunakan di file .py)
+tensorflow
