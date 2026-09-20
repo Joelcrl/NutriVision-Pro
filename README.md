@@ -1,69 +1,107 @@
-# 🍏 NutriVision Pro
+# NutriVision Pro
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-red)](https://link-aplikasi-kamu.streamlit.app/)
+An interactive web application for tracking children's daily nutrition and identifying fruits through AI-powered image classification.
 
-An interactive web application built with **Streamlit**, designed to help parents track their child's daily nutrition and classify fruit images using a Deep Learning model (MobileNetV2).
+**Live Demo:** [https://your-app-name.streamlit.app/](https://your-app-name.streamlit.app/)
 
-## ✨ Key Features
+## Features
 
-- 🔐 **User Authentication:** Secure login and registration system to protect user profile data.
-- 👶 **Child Profile & BMI Calculator:** Keep track of the child's physical profile with automatic Body Mass Index (BMI) calculations to monitor growth and health status.
-- 📊 **Daily Nutrition Tracker:** A monitoring dashboard to ensure the child's daily nutritional needs are consistently met.
-- 📸 **Smart Fruit Scanner:** Real-time fruit image detection and classification using artificial intelligence, instantly displaying the nutritional information of the scanned fruit.
+- **Secure Authentication**: Login and registration system with profile data protection
+- **Child Profile Management**: Track physical profile with automatic BMI calculation
+- **Nutrition Tracking**: Monitor daily nutritional intake against recommended guidelines
+- **Smart Fruit Scanner**: Real-time fruit identification and instant nutritional lookup using deep learning (MobileNetV2)
 
-## 📂 Repository Structure
+## Tech Stack
 
-```text
+| Component | Technology |
+|-----------|-----------|
+| Frontend & Framework | Streamlit |
+| Machine Learning | TensorFlow / Keras |
+| Image Processing | Pillow / OpenCV |
+| Data Processing | Pandas, NumPy |
+| Language | Python 3.x |
+
+## Project Structure
+
+```
 NutriVision-Pro/
 ├── model/
-│   ├── class_names.json        # Class labels for the classification model
-│   └── fruit_classifier.h5     # Pre-trained Deep Learning model (MobileNetV2)
-├── ux AOL AI/assets/           # UI/UX assets directory (Logos, Backgrounds, etc.)
-├── auth.py                     # Login and registration logic
-├── child_nutrition.py          # Nutrition tracking and dashboard module
-├── child_profile.py            # Profile management and BMI calculation module
-├── config.py                   # Main application configuration file
-├── home.py                     # Main landing page
-├── main.py                     # Main execution file (Streamlit entry point)
-├── nutrition_data.py           # Static database or nutrition data handler
-├── scan.py                     # Image scanning and inference module
-├── requirements.txt            # List of required Python dependencies
-├── .gitignore                  # Files and directories to be ignored by Git
-└── README.md                   # Project documentation
+│   ├── class_names.json          # Classification model labels
+│   └── fruit_classifier.h5       # Pre-trained MobileNetV2 model
+├── assets/                        # UI/UX assets (logos, backgrounds)
+├── auth.py                        # Authentication logic
+├── child_profile.py               # Profile and BMI management
+├── child_nutrition.py             # Nutrition tracking dashboard
+├── scan.py                        # Image inference module
+├── nutrition_data.py              # Nutrition data handler
+├── config.py                      # Application configuration
+├── home.py                        # Landing page
+├── main.py                        # Entry point
+├── requirements.txt               # Python dependencies
+├── .gitignore                     # Git ignore rules
+└── README.md                      # Documentation
+```
 
-🚀 Local Installation Guide
-If you want to run this application locally on your machine, follow these steps:
+## Installation
 
-1. Clone the Repository
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
 
-git clone [https://github.com/your-username/NutriVision-Pro.git](https://github.com/your-username/NutriVision-Pro.git)
-cd NutriVision-Pro
+### Setup Instructions
 
-2. Create a Virtual Environment
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/NutriVision-Pro.git
+   cd NutriVision-Pro
+   ```
 
-python -m venv venv
+2. **Create a virtual environment**
+   ```bash
+   python -m venv venv
+   ```
 
-# For Windows users:
-venv\Scripts\activate
+3. **Activate the virtual environment**
+   - Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
 
-# For Mac/Linux users:
-source venv/bin/activate
+4. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Install Dependencies
+5. **Run the application**
+   ```bash
+   streamlit run main.py
+   ```
 
-pip install -r requirements.txt
+The application will be available at `http://localhost:8501`
 
-4. Run the Application
+## Usage
 
-streamlit run main.py
+1. Create an account or log in
+2. Set up your child's profile (age, weight, height)
+3. Track daily nutrition intake using the dashboard
+4. Use the fruit scanner to identify fruits and view their nutritional content
 
-🛠️ Technologies Used
-Frontend & Framework: Streamlit
+## Dependencies
 
-Machine Learning: TensorFlow / Keras
+- streamlit
+- tensorflow
+- keras
+- pillow
+- opencv-python
+- pandas
+- numpy
 
-Image Processing: Pillow / OpenCV
+See `requirements.txt` for complete version specifications.
 
-Data Manipulation: Pandas & NumPy
+## Author
 
-Programming Language: Python 3.x
+Joel Chriscendo Rahardjo Liem
