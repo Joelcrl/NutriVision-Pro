@@ -91,7 +91,7 @@ set_main_page_background()
 if st.session_state['logged_in']:
     
     if os.path.exists(LOGO_PATH):
-        st.sidebar.image(LOGO_PATH, use_column_width='always') 
+        st.sidebar.image(LOGO_PATH, use_container_width=True) 
     else:
         st.sidebar.warning(f"Logo file not found at: {LOGO_PATH}") 
     

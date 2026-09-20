@@ -46,7 +46,7 @@ def scan_page():
 
     if uploaded_file is not None:
         img = Image.open(uploaded_file).convert("RGB")
-        st.image(img, caption="Gambar Buah yang Di-upload", use_column_width=True)
+        st.image(img, caption="Gambar Buah yang Di-upload", use_container_width=True)
         
         if 'manual_input' not in st.session_state:
              st.session_state['manual_input'] = False 
