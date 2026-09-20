@@ -1,0 +1,282 @@
+all_components = ["water","fiber","vitaminb1","vitaminb2","vitaminb3","vitaminb6","vitaminb9","magnesium","potassium",
+                  "vitaminc","vitamina", "vitamink", "vitamine", "vitaminb5", "vitaminb7"
+                  ]
+
+fruit = {
+    "apple" : {
+        "water" : 83600,
+        "fiber" : 2100,
+        "vitaminb1" : 0.006,
+        "vitaminb2" : 0.068,
+        "vitaminb3" : 0.091,
+        "vitaminb6" : 0.035,
+        "vitaminb9" : 0.006,
+        "magnesium" : 4.7,
+        "potassium" : 104
+    },
+    "avocado" : {
+        "water" : 67000,
+        "fiber" : 7500,
+        "magnesium" : 32.8,
+        "potassium" : 576,
+        "vitaminc" : 4,
+        "vitaminb6" : 0.167,
+        "vitaminb9" : 0.129
+    },
+    "banana" : {
+        "water" : 78300,
+        "fiber" : 1700,
+        "magnesium" : 27,
+        "potassium" : 385,
+        "vitaminc" : 9.7,
+        "vitaminb1" : 0.04,
+        "vitaminb2" : 0.1,
+        "vitaminb3" : 0.57,
+        "vitaminb6" : 0.234,
+        "vitaminb9" : 0.025,
+        "vitamina" : 0.01,
+        "vitamink" : 0.0002
+    },
+    "cherry" : {
+        "water" : 82200,
+        "fiber" : 2100,
+        "magnesium" : 12.1,
+        "potassium" : 230,
+        "vitaminc" : 10.4,
+        "vitaminb6" : 0.049
+    },
+    "coconut" : {
+        "water" : 30,
+        "fiber" : 2100,
+        "vitamine" : 0.11,
+        "vitamink"  :0.0006
+    },
+    "dragonfruit" : {
+        "water" : 87000,
+        "fiber" : 900,
+        "magnesium" : 38.9,
+        "potassium" : 328.4,
+        "vitaminb1" : 0.0024,
+        "vitaminb2" : 0.0013,
+        "vitaminb3" : 0.0126,
+        "vitaminc" : 4.4
+    },
+    "durian" : {
+        "water" : 65000,
+        "fiber" : 3500,
+        "magnesium" : 21.5,
+        "potassium": 422.167,
+        "vitaminb1" : 0.1, 
+        "vitaminb2" : 0.19,
+        "vitaminb3" : 136.5,
+        "vitaminc" : 53
+    },
+    "grapes" : {
+        "water" : 92500,
+        "fiber" : 2100,
+        "magnesium" : 11.9,
+        "potassium": 260,
+        "vitaminb1" : 0.075, 
+        "vitaminb2" : 0.065,
+        "vitaminb3" : 0.805,
+        "vitaminc" : 27.2,
+        "vitaminb6" : 0.06,
+        "vitaminb9" : 0.009,
+        "vitamine" : 0.98,
+        "vitamink" : 0.0042,
+        "vitamina" : 0.393
+    },
+    "guava" : {
+        "water" : 86000,
+        "fiber" : 2400,
+        "magnesium" : 12,
+        "potassium" : 150,
+        "vitamina" : 0.38,
+        "vitaminb1" : 0.03,
+        "vitaminb2" : 0.04,
+        "vitaminb3" : 1,
+        "vitaminb6" : 0.11,
+        "vitaminb9" : 0.049,
+        "vitaminc" : 243
+    },
+    "kiwi" : {
+        "water" : 83800,
+        "fiber" : 3000,
+        "magnesium" : 15,
+        "potassium" : 279,
+        "vitamina" : 0.054,
+        "vitaminb2" : 0.05,
+        "vitaminb3" : 0.35,
+        "vitaminb9" : 0.032,
+        "vitaminc" : 85,
+        "vitamine" : 1.08
+    },
+    "lemon" : {
+        "water" : 89000,
+        "fiber" : 2500,
+        "magnesium" : 9,
+        "potassium" : 16,
+        "vitamina" : 0.01,
+        "vitaminb1" : 0.04,
+        "vitaminb2" : 0.02,
+        "vitaminb3" : 0.2,
+        "vitaminb6" : 0.08,
+        "vitaminc" : 48,
+        "vitamine" : 0.15
+    },
+    "longan" : {
+        "water" : 82800,
+        "fiber" : 1100,
+        "magnesium" : 10,
+        "potassium" : 266,
+        "vitaminb1" : 0.03,
+        "vitaminb3" : 0.3,
+        "vitaminc": 84,
+        "vitaminb2" : 0.14
+    },
+    "lychee" : {
+        "water" : 80600,
+        "fiber" : 1300,
+        "magnesium" : 7,
+        "potassium" : 150,
+        "vitaminb1" : 0.05,
+        "vitaminb2" : 0.07,
+        "vitaminb3" : 0.5,
+        "vitaminb6" : 0.1,
+        "vitaminc" : 49,
+        "vitamine" : 0.07
+    },
+    "mango" : {
+        "water" : 84100,
+        "fiber" : 1300,
+        "magnesium" : 10,
+        "potassium" : 153,
+        "vitamina" : 0.82,
+        "vitaminb1" : 0.06,
+        "vitaminb2" : 0.02,
+        "vitaminb5" : 0.1,
+        "vitaminb6" : 0.05,
+        "vitaminc" : 24,
+        "vitamine" : 0.85
+    },
+    "melon" : {
+        "water" : 91000,
+        "fiber" : 1000,
+        "magnesium" : 8,
+        "potassium " : 215,
+        "vitamina" : 0.77,
+        "vitaminb1" : 0.02,
+        "vitaminb2" : 0.02,
+        "vitaminb3" : 0.2,
+        "vitaminb6" : 0.03,
+        "vitaminb7" : 0.001,
+        "vitaminc" : 34
+    },
+    "orange" : {
+        "water" : 86700,
+        "fiber" : 2400,
+        "magnesium " : 12,
+        "potassium " : 190,
+        "vitamina" : 0.034,
+        "vitaminb1" : 0.07,
+        "vitaminb2" : 0.02,
+        "vitaminb5" : 0.01,
+        "vitaminb6" : 0.07,
+        "vitaminc" : 52,
+        "vitamine" : 0.1
+    },
+    "papaya" : {
+        "water" : 89300,
+        "fiber" : 2300,
+        "magnesium" : 14,
+        "potassium" : 140,
+        "vitamina" : 0.24,
+        "vitaminb1" : 0.03,
+        "vitaminb2" :0.03,
+        "vitaminb3" : 0.3,
+        "vitaminb6" : 0.04,
+        "vitaminc" : 60,
+        "vitamine" : 0.3
+    },
+    "pear" : {
+        "water" : 84200,
+        "fiber" : 3000,
+        "magnesium" : 7,
+        "potassium" : 130,
+        "vitamina" : 0.022,
+        "vitaminb7" : 0.0004,
+        "vitaminc" : 2,
+        "vitamine" : 0.2
+    },
+    "pineapple" : {
+        "water" : 88400,
+        "fiber" : 900,
+        "magnesium" : 15,
+        "potassium" :160,
+        "vitaminb1" : 0.04,
+        "vitaminb5" : 0.06,
+        "vitaminb6" : 0.02,
+        "vitaminc" : 39,
+        "vitamine" : 0.02
+    },
+    "rambutan" : {
+        "water" : 79500,
+        "fiber" : 2800,
+        "magnesium" : 10,
+        "potassium" : 140,
+        "vitaminb1" : 0.015,
+        "vitaminb2" : 0.065,
+        "vitaminb3" : 0.8,
+        "vitaminb6" : 0.02,
+        "vitaminc" : 70,
+        "vitamine" : 0.54
+    },
+    "snakefruit" : {
+        "water" : 78000,
+        "fiber" : 2200,
+        "magnesium" : 0.2,
+        "potassium" : 113,
+        "vitaminb1" : 0.04,
+        "vitaminc" : 58,
+        "vitaminb2" : 0.03,
+        "vitamina" : 0.004
+    },
+    "starfruit" : {
+        "water" : 91400,
+        "fiber" : 2800,
+        "magnesium" : 10,
+        "potassium" : 133,
+        "vitamina" : 0.025,
+        "vitaminc" : 34,
+        "vitaminb3" : 0.37,
+        "vitamine" : 0.15,
+        "vitaminb1" : 0.01,
+        "vitaminb5" : 0.39
+    },
+    "strawberry" : {
+        "water" : 92100,
+        "fiber" : 2500,
+        "magnesium" : 8,
+        "potassium" : 185,
+        "vitaminb1" : 0.02,
+        "vitaminb2" : 0.05,
+        "vitaminb3" : 0.1,
+        "vitaminb5" : 0.09,
+        "vitaminb6" :0.02,
+        "vitaminb7" : 0.002,
+        "vitaminc" : 45,
+        "vitamine" : 0.32
+    },
+    "watermelon" : {
+        "water" : 91600,
+        "fiber" : 400,
+        "magnesium" : 12,
+        "potassium" : 122,
+        "vitamina" : 0.29,
+        "vitaminb1" : 0.02,
+        "vitaminb5" : 0.09,
+        "vitaminb7" : 0.7,
+        "vitaminc" : 4
+    }
+    
+}
