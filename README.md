@@ -2,7 +2,7 @@
 
 An interactive web application for tracking children's daily nutrition and identifying fruits through AI-powered image classification.
 
-**Live Demo:** [https://your-app-name.streamlit.app/](https://your-app-name.streamlit.app/)
+**Live Demo:** [https://nutrivision-pro-production.up.railway.app//](https://nutrivision-pro-production.up.railway.app/)
 
 ## Features
 
